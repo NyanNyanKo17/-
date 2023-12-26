@@ -1,0 +1,261 @@
+/*Верстка меню, хедера и офера, подключение шрифтов*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+@font-face {
+	font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(216, 188, 147);
+}
+
+nav > ul
+{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo
+{
+    width: 4vw;
+}
+
+nav > ul > li
+{
+    list-style-type: none;
+
+}
+
+nav > ul > li > a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li> a:hover
+{   
+    color: chocolate;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.offer
+{
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+}
+
+.offer > div
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 4vw;
+    align-items: stretch;
+}
+
+.text_block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #deb88785;
+    margin: 0;
+    gap: 3vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    border: solid 1px transparent;
+    border-radius: 9px;
+}
+
+ img
+{
+    border-radius: 9px;
+}
+
+/*Верстка основного конента страницы: 
+"О компании", 
+отзывы, 
+форма поиска, 
+акции*/
+
+.AboutUs
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-top: 17vh;
+}
+
+.us_img
+{
+    width: 42vw;
+}
+
+.AboutUs > div > p
+{
+    margin-top: 2vh;
+    padding-inline: 3vh;
+    padding-top: 13vh;
+    text-align: end;
+    font-size: 22px;
+
+}
+
+.goal
+{
+    margin-top: 3vh;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+  }
+
+
+.reviews
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 54vw;
+    gap: 2vh;
+    margin: auto;
+    margin-top: 10vh;
+    align-items: center;
+}
+
+.reviews > div
+{
+    padding-inline: 2vh;
+}
+
+form
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #deb88785;
+    gap: 3vh;
+    border: solid 1px transparent;
+    border-radius: 9px;
+    margin: auto;
+    margin-top: 10vh;
+    width: 47vw;
+    padding: 4vw;
+}
+
+form > h3
+{
+    text-align: center;
+} 
+
+input, select
+{
+    height: 4vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
+
+.btn
+{
+    font-family: 'Montserrat';
+} 
+
+.sales
+{
+    
+    margin: auto;
+    margin-top: 7vh;
+    display: flex;
+    width: 55vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.promotion
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.sales > img
+{
+    width: 45vw;
+}
+
+.promotion > button
+{
+    background-color: #deb88785;
+    color: #271305;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 20vw;
+    height: 6vh;
+}
+
+.sales > button
+{
+    background-color: #deb88785;
+    color: #271305;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 20vw;
+    height: 6vh;
+}
+
+.close
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+    margin-top: 7vh;
+}
+
+.close > form
+{
+    margin: 1vh;
+}

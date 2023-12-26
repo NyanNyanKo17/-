@@ -1,0 +1,121 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+@font-face {
+	font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(216, 188, 147);
+}
+
+nav > ul
+{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+}
+
+.logo
+{
+    width: 4vw;
+}
+
+nav > ul > li
+{
+    list-style-type: none;
+
+}
+
+nav > ul > li > a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li> a:hover
+{   
+    color: chocolate;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+}
+
+
+form
+{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #deb88785;
+    gap: 3vh;
+    border: solid 1px transparent;
+    border-radius: 9px;
+    margin-top: 5vh;
+    padding: 4vw;
+}
+
+h3
+{
+    text-align: center;
+} 
+
+input, select
+{
+    height: 4vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 30vh;
+}
+
+.cart
+{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.cart, .fon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.fon
+{
+    background-color: blanchedalmond;
+    padding: 2vw;
+
+}
+
+.fon > h2
+{
+    text-align: center;
+}
+
+.fon > img
+{
+    width: 54vw;
+}
+
+.text
+{
+    width: 54vw;
+}
